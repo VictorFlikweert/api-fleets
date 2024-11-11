@@ -1,0 +1,8 @@
+namespace: fleet-helm-qg
+helm:
+  chart: https://github.com/FlikweertvisionVadym/qg-deployment/releases/download/machine-software-chart-0.1.27/machine-software-chart-0.1.27.tgz
+targetCustomizations:
+- name: test
+  clusterSelector:
+    matchLabels:
+      env: test
